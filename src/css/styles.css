@@ -73,6 +73,10 @@
         color: #4b85ff;
     }
 
+    a:visited {
+  	text-decoration: none;    
+    }
+
     h1 {
         font-family: Inter-Bold;
         font-size: 70px;
