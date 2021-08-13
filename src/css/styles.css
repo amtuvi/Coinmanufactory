@@ -63,23 +63,34 @@
         margin: 0;
     }
 
+    .content-frame {
+        max-width: 1200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     a {
         font-family: Poppins-Light;
         color: #4b85ff;
         cursor: pointer;
+        text-decoration: none;
     }
 
     a:hover {
         color: #4b85ff;
     }
 
-    a:visited {
-  	text-decoration: none;    
-    }
-
     h1 {
         font-family: Inter-Bold;
         font-size: 70px;
+        margin: 0;
+    }
+
+    h2 {
+        font-family: Inter-Bold;
+        font-size: 52px;
         margin: 0;
     }
 
@@ -90,15 +101,20 @@
     }
 
     h4 {
-        font-family: Inter-Light;
-        font-weight: 400;
+        font-family: Inter-Bold;
         font-size: 25px;
+        margin: 0;
+    }
+
+    h5 {
+        font-family: Inter-Bold;
+        font-size: 20px;
         margin: 0;
     }
 
     p {
         font-family: Poppins-Light;
-        font-size: 17px;
+        font-size: 17px; /* 17px */
         margin: 0;
     }
 
@@ -106,6 +122,21 @@
         font-family: Poppins-Light;
         font-size: 17px;
         margin: 0;
+    }
+
+    input {
+        width: 100%;
+        background-color: #FAFAFA;
+        margin-bottom: 20px;
+        border: 1px solid #eaeaea;
+        padding: 12.75px;
+        font-size: 17px;
+        font-family: Poppins-Light;
+    }
+
+    label {
+        font-size: 17px;
+        font-family: Poppins-Light;
     }
 
 /*** === GLOABL END === ***/    
@@ -131,6 +162,10 @@
         background-color: rgba(75, 132, 255, 0.85);
     }
 
+    .selected {
+        color: #4b85ff !important;
+    }
+
 /*** === GENERAL END === ***/ 
 
 /*** === HEADER === ***/
@@ -141,6 +176,7 @@
     height: 120px;
     display: table;
     border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
 }
 
 .footer-image-container {
@@ -166,6 +202,7 @@
     width: 80px;
     height: 80px;
     margin-left: 55px;
+    cursor: pointer;
 }
 
 .footer-navigation-container a {
@@ -224,8 +261,13 @@
 }
 
 .index-title {
-    margin-top: 8%;
+    margin-top: 6%;
     margin-bottom: 2%;
+}
+
+.index-under-title {
+    font-family: Inter-Light;
+    font-weight: 400;
 }
 
 .index-create-button {
@@ -279,7 +321,114 @@
 /*** === INDEX PAGE END === ***/
 
 
+/*** === BEP-20 / ERC-20 PAGE ***/
+.token-site-heading {
+    margin-bottom: 40px;
+}
 
+.token-site-heading h2 {
+    margin-bottom: 20px;
+}
+
+.token-of-choice {
+    margin-bottom: 50px;
+}
+
+.cards {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card-top {
+    background-color: #131a24;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-top h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card-top h5 {
+    color: #ffffff;
+}
+
+.card-bottom {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    border-right: 1px solid #a5a5a5;
+    border-left: 1px solid #a5a5a5;
+    border-bottom: 1px solid #a5a5a5;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.card-bottom div {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.not-included {
+    text-decoration: line-through;
+    color: #808080;
+}
+/*** === BEP-20 / ERC-20 PAGE END ***/
+
+
+
+/*** === CREATE TOKEN FORM PAGE === ***/
+.token-form-container {
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 30px;
+}
+
+.token-form-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* button circle loader */
+.create-form-button {
+    position: relative;
+}
+
+.button__text {
+    transition: all 0.2s;
+  }
+  
+  .loader .button__text {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .loader::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px dotted #ffffff;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+  }
+  /* button circle loader end */
+
+/*** === CREATE TOKEN FORM PAGE END === ***/
 
 
 /*** === FOOTER === ***/
@@ -316,7 +465,7 @@
 /* === GRID SYSTEM === */
 
 .container {
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -335,6 +484,7 @@
   }
   
   .col-1 {width: 16.666%; }
+  .col-15{width: 25.000%; }
   .col-2 {width: 33.333%; }
   .col-3 {width: 50.000%; }
   .col-4 {width: 66.666%; }
@@ -349,6 +499,7 @@
   
   @media (max-width: 768px) {
     .col-1 {width: 50.000%; }
+    .col-15{width: 50.000%; }
     .col-2 {width: 100.00%; }
     .col-3 {width: 100.00%; }
     .col-4 {width: 100.00%; }
@@ -356,6 +507,7 @@
   
   @media (max-width: 480px) {
     .col-1 {width: 100.00%; }
+    .col-15{width: 100.00%; }
     .col-2 {width: 100.00%; }
     .col-3 {width: 100.00%; }
     .col-4 {width: 100.00%; }
