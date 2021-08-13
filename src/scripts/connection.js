@@ -70,7 +70,7 @@ const NAME = "once";
 	}
 	
 	async function checkStillConnected(){
-    	window.ethereum.on('accountsChanged', function () {
+    	window.ethereum.on('accountsChanged', async function () {
             /*
 			const web3 = new Web3(window.ethereum);
        	 	const accounts = web3.eth.getAccounts();*/
