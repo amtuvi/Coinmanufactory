@@ -1,4 +1,3 @@
-<script>
     /*
     var networkPopup = document.querySelector('.Network-Popup');
     var tokenErrorPopup = document.querySelector('.TokenErrorPopup');
@@ -513,7 +512,3 @@
 
     }
     */
-    
-    
-    
-</script>
