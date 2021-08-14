@@ -15,11 +15,10 @@ const NAME = "once";
         		this.name = NAME;
 				connectAccount();
     		}
-            /*
+            
 			web3 = new Web3(window.ethereum);
-			
-			const accounts = await web3.eth.getAccounts();*/
-            const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+			const accounts = await web3.eth.getAccounts();
+            
 			if(accounts[0] != null){
 				var width = window.innerWidth;
 				if(width > 921){
@@ -71,10 +70,10 @@ const NAME = "once";
 	
 	async function checkStillConnected(){
     	window.ethereum.on('accountsChanged', async function () {
-            /*
+            
 			const web3 = new Web3(window.ethereum);
-       	 	const accounts = web3.eth.getAccounts();*/
-            const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+       	 	const accounts = web3.eth.getAccounts();
+                
 			if(accounts[0] == null){
 				var width = window.innerWidth;
 				if(width > 921){
