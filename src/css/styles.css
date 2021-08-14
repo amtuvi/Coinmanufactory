@@ -462,6 +462,56 @@
 /*** === FOOTER END === ***/
 
 
+/*** === POPUPS === ***/
+
+.installMetaMaskPopup {
+	width: 600px;
+    height: 150px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    padding: 30px;
+    margin-top: -100px;
+    margin-left: -310px;
+    z-index: 999;
+    background: #FFFFFF;
+	border: 2px solid #4b85ff;
+	border-radius: 10px;
+	vertical-align: middle;
+	line-height: 30px;
+	display: none;
+	text-align: center;
+}
+
+
+.installMetaMaskPopup h5 {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 650px){
+	
+	.installMetaMaskPopup {
+		width: 300px;
+		margin-left: -150px;
+		top: 30%;
+	}
+}
+
+
+.backgroundOverlay {
+	background-color: transparent;
+    position:fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+    display: none;
+	z-index: 20;
+}
+
+/*** === POPUPS END === ***/
+
+
 /* === GRID SYSTEM === */
 
 .container {
