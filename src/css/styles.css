@@ -509,6 +509,68 @@
 	z-index: 20;
 }
 
+
+.fly-in {
+    -webkit-animation: flyin 4s linear forwards; 
+   -moz-animation:    flyin 4s linear forwards; 
+   -o-animation:      flyin 4s linear forwards;
+   animation:         flyin 4s linear forwards;
+ }
+ @keyframes flyin {
+  0%   { 	
+      opacity: 0;
+  }
+     5%{
+         opacity: 1;
+     }
+     90%{
+         opacity: 1;
+     }
+  100% { 
+      opacity: 0;
+  }
+ }
+ 
+ 
+ .success-fly-in {
+ -webkit-animation: sflyin 0.2s linear forwards;
+   -moz-animation:    sflyin 0.2s linear forwards;
+   -o-animation:      sflyin 0.2s linear forwards;
+   animation:         sflyin 0.2s linear forwards;
+ }
+ @keyframes sflyin {
+  0%   { 
+         opacity: 0;
+  }
+  100% { 
+      opacity: 1;
+  }
+ }
+ 
+ 
+ .success-fly-out {
+ -webkit-animation: sflyout 0.2s linear forwards;
+   -moz-animation:    sflyout 0.2s linear forwards;
+   -o-animation:      sflyout 0.2s linear forwards; 
+   animation:         sflyout 0.2s linear forwards; 
+ }
+ @keyframes sflyout {
+  0%   { 
+         opacity: 1;
+  }
+  100% { 
+      opacity: 0;
+  }
+ }
+ 
+ 
+ 
+ .shadow {
+   -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+   -moz-box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+   box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+ }
+
 /*** === POPUPS END === ***/
 
 
