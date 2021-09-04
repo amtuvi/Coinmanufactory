@@ -72,6 +72,28 @@
 
     <!-- === FOOTER END === -->
 
+
+    <!-- === POPUPS === -->
+    <div class="installMetaMaskPopup">
+      <h5>MetaMask is not installed</h5>
+      <span>Please <a href="https://metamask.io/" target="_blank">install MetaMask</a> to create a token.</span>
+  </div>
+  <div class="backgroundOverlay" onclick="deactivateMetMask();"></div>
+
+  <div class="TokenSuccessPopup">
+    <h5>Token was successfully created!</h5>
+    <h6>Contract address:</h6>
+    <span class="contractAddress">0x79D34f5C03ec0f08d555062A9a37e39F658227D9</span>
+    <h6>Token on BSC-Scan:</h6>
+    <a class="bscScanAddress" target="_blank">https://testnet.bscscan.com/token/0x79D34f5C03ec0f08d555062A9a37e39F658227D9</a>
+  </div>
+
+  <div class="Network-Popup fly-in" ><span>Error: Please switch to a BSC-Network to create a token.</span></div>
+
+  <div class="TokenErrorPopup fly-in"><span>Error: Creation of token was not sucessfull.</span></div>
+  <!-- === POPUPS END === -->
+
+
     <!-- === SCRIPTS === -->
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script src="src/scripts/connection.js"></script>
