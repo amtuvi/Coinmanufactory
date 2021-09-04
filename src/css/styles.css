@@ -481,7 +481,7 @@
     background: #FFFFFF;
 	border: 2px solid #4b85ff;
 	border-radius: 10px;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	line-height: 30px;
 	display: none;
 	text-align: center;
@@ -503,8 +503,9 @@
     background: #FFFFFF;
 	border: 2px solid #4b85ff;
 	border-radius: 10px;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	line-height: 30px;
+    display: none;
 	text-align: center;
 }
 
@@ -520,6 +521,24 @@
 
 .Network-Popup {
     width: 600px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    color: #fc6158;
+    background: #ffdddb;
+	border: 1px solid #ff7a73;
+	border-radius: 5px;
+	/*vertical-align: middle;*/
+	line-height: 30px;
+	display: none;
+	text-align: center;
+}
+
+.TokenErrorPopup {
+    width: 550px;
     position: fixed;
     top: 20%;
     left: 50%;
