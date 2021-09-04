@@ -1,4 +1,4 @@
-    /*
+    
     var networkPopup = document.querySelector('.Network-Popup');
     var tokenErrorPopup = document.querySelector('.TokenErrorPopup');
     var tokenSuccessPopup = document.querySelector('.TokenSuccessPopup');
@@ -6,7 +6,7 @@
     var contractAddressText = document.querySelector('.contractAddress');
     var bscscanAddressText = document.querySelector('.bscscanAddress');
     var overlay = document.querySelector('.backgroundOverlay');
-    */
+    
 
     var createButton = document.querySelector('.create-form-button');
     
@@ -28,7 +28,7 @@
 	console.log(name + symbol + supply + decimals);
 	
 	beforeDeployCheck(name, symbol, supply, decimals);
-	//showSuccess(13);
+	/*showSuccess(13);*/
 });
 	
 	function beforeDeployCheck(name, symbol, supply, decimals){
@@ -36,7 +36,7 @@
 		    checkNetworkConnection(name, symbol, supply, decimals);
 		}else{
 		    createButton.classList.remove('loader');
-			//showInstallMetaMask();
+			showInstallMetaMask();
 	    }
 	}
 	
@@ -51,7 +51,7 @@
 	        }
 	        else{
 	            createButton.classList.remove('loader');
-	            //networkError();
+	            networkError();
 	        }
 	   });
 	}
@@ -390,11 +390,11 @@
 		})
 		.on('error', function(error){
 		    createButton.classList.remove('loader');
-		    //tokenError();
+		    tokenError();
 		});
 		console.log("deployed to ", contract.options.address);
 		createButton.classList.remove('loader');
-		//showSuccess(contract.options.address);
+		showSuccess(contract.options.address);
 		wallet_watchAsset(contract.options.address, symbol, decimals);
 		
 		
@@ -442,7 +442,7 @@
     
     
     
-    /*
+    
     
     function networkError(){
         networkPopup.style.display = "block";
@@ -511,4 +511,4 @@
         }, 200);
 
     }
-    */
+    
