@@ -4,7 +4,7 @@
     var tokenSuccessPopup = document.querySelector('.TokenSuccessPopup');
     var installMetaMaskPopup = document.querySelector('.installMetaMaskPopup');
     var contractAddressText = document.querySelector('.contractAddress');
-    var bscscanAddressText = document.querySelector('.bscscanAddress');
+    var bscscanAddressText = document.querySelector('.bscScanAddress');
     var overlay = document.querySelector('.backgroundOverlay');
     
     
