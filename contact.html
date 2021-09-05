@@ -36,11 +36,11 @@
         </div>
         <div class="wrapper-container">
             <div class="contact-form-container">
-                <form class="contact-form" action="src/scripts/contactform.php" method="POST">
+                <form class="contact-form" action="https://formsubmit.co/social.david@hotmail.com" method="POST">
                     <label>Name <span class="required">*</span></label><br>
                     <input type="text" name="name" class="contact-name" required><br>
                     <label>Email <span class="required">*</span></label><br>
-                    <input type="text" name="mail" class="contact-email" required><br>
+                    <input type="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" class="contact-email" required><br>
                     <label>Subject <span class="required">*</span></label><br>
                     <input type="text" name="subject" class="contact-subject" required><br>
                     <label>Message <span class="required">*</span></label><br>
