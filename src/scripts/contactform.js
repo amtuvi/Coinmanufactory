@@ -8,5 +8,5 @@ contactForm.addEventListener('submit', function(){
     setTimeout(function () {
         contactFormContainer.style.display = "none";
         successText.style.display = "block";
-    }, 500);
+    }, 1000);
 })
