@@ -467,10 +467,10 @@
 
 
 .contact-fly-out {
-    -webkit-animation: cflyout 0.5s linear forwards;
-      -moz-animation:    cflyout 0.5s linear forwards;
-      -o-animation:      cflyout 0.5s linear forwards; 
-      animation:         cflyout 0.5s linear forwards; 
+    -webkit-animation: cflyout 1s linear forwards;
+      -moz-animation:    cflyout 1s linear forwards;
+      -o-animation:      cflyout 1s linear forwards; 
+      animation:         cflyout 1s linear forwards; 
     }
     @keyframes cflyout {
      0%   { 
