@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Startseite</title>
+
+		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
+
+	</head>
+
+    <body>
+
+	<!-- === HEADER ==== -->
+	    <div class="footer-cointainer">
+		    <div class="footer-image-container">
+		    	<a href="index.html"><img src="src/img/coinmanufactory logo black.png"></a>
+		    </div>
+		     <div class="footer-navigation-container">
+                <a href="bep-20.html">BEP-20</a>
+                <a href="erc-20.html">ERC-20</a>
+		    </div>
+		     <div class="footer-connected-container">
+                <button class="connect-button" onclick="connect();">Connect</button>
+		    </div>
+	    </div>
+	<!-- === HEADER END ==== -->
+
+
+
+    <!-- === BODY === -->
+    <div class="content-frame">
+        <div class="wrapper-container token-site-heading">
+            <h2 class="token-heading">Privacy Policy</h2>
+        </div>
+    </div>
+    <!-- === BODY END === -->
+
+
+
+    <!-- === FOOTER === -->
+    
+        <div class="wrapper-container footer-rights">
+            <a href="contact.html">Contact</a>
+            <a href="imprint.html">Imprint</a>
+            <a href="privacy policy.html">Privacy Policy</a>
+        </div>
+        <div class="wrapper-container copyright-container">
+            <span>Copyright &#169; <script type="text/javascript">document.write( new Date().getFullYear() );</script> Coinmanufactory</span>
+        </div>
+
+    <!-- === FOOTER END === -->
+
+
+    <!-- === COOKIE BANNER === -->
+        <div class="cookie-banner-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <span>This website uses cookies and Google Analytics for analysis and statistics. Cookies help us to improve the usability of our website.</span>
+                    </div>
+                </div>
+                <div class="row cookie-banner-button-container">
+                    <div class="col-2 mobile-cookie-button-container">
+                        <button class="cookie-button" onclick="cookieConfirm();">Confirm</button>
+                    </div>
+                    <div class="col-2 mobile-cookie-button-container">
+                        <button class="cookie-button" onclick="cookieDecline();">Decline</button>
+                    </div>
+                    <div class="col-2">
+                        <a href="privacy policy.html"><button class="cookie-button">Privacy Policy</button></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- === COOKIE BANNER END === -->
+
+
+    <!-- === POPUPS === -->
+    <div class="installMetaMaskPopup">
+        <h5>MetaMask is not installed</h5>
+        <span>Please <a href="https://metamask.io/" target="_blank">install MetaMask</a> to create a token.</span>
+    </div>
+    <div class="backgroundOverlay" onclick="deactivateOverlay();"></div>
+    <!-- === POPUPS END === -->
+
+    <!-- === SCRIPTS === -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="src/scripts/connection.js"></script>
+    <script src="src/scripts/cookie-banner.js"></script>
+    <!-- === SCRIPTS END === -->
+
+    </body>
+</html>
