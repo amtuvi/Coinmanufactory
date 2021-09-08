@@ -22,7 +22,7 @@
                 <a class="selected" href="erc-20.html">ERC-20</a>
 		    </div>
 		     <div class="footer-connected-container">
-                <button class="connect-button">Connect</button>
+                <button class="connect-button" onclick="connect();">Connect</button>
 		    </div>
 	    </div>
 	<!-- === HEADER END ==== -->
@@ -35,7 +35,7 @@
         <img class="index-bsc" src="src/img/ethereum.svg">
       </div>
       <div class="wrapper-container token-site-heading">
-        <h2>ERC-20 Token</h2>
+        <h2 class="tnormal-heading">ERC-20 Token</h2>
         <span>An ERC-20 token is a smart contract which is running on the Ethereum blockchain.<br>It can be sent or received and represents assets with a value.</span>
       </div>
       <div class="wrapper-container token-of-choice">
@@ -136,6 +136,47 @@
         </div>
 
     <!-- === FOOTER END === -->
+
+
+
+    <!-- === COOKIE BANNER === -->
+    <div class="cookie-banner-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <span>This website uses cookies and Google Analytics for analysis and statistics. Cookies help us to improve the usability of our website.</span>
+                </div>
+            </div>
+            <div class="row cookie-banner-button-container">
+                <div class="col-2 mobile-cookie-button-container">
+                    <button class="cookie-button" onclick="cookieConfirm();">Confirm</button>
+                </div>
+                <div class="col-2 mobile-cookie-button-container">
+                    <button class="cookie-button" onclick="cookieDecline();">Decline</button>
+                </div>
+                <div class="col-2">
+                    <a href="privacy policy.html"><button class="cookie-button">Privacy Policy</button></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- === COOKIE BANNER END === -->
+
+
+    <!-- === POPUPS === -->
+    <div class="installMetaMaskPopup">
+        <h5>MetaMask is not installed</h5>
+        <span>Please <a href="https://metamask.io/" target="_blank">install MetaMask</a> to create a token.</span>
+    </div>
+    <div class="backgroundOverlay" onclick="deactivateOverlay();"></div>
+    <!-- === POPUPS END === -->
+
+    <!-- === SCRIPTS === -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="src/scripts/connection.js"></script>
+    <script src="src/scripts/cookie-banner.js"></script>
+    <!-- === SCRIPTS END === -->
 
     </body>
 </html>
